@@ -1,6 +1,16 @@
 (function() {
+    var secondJobs = [
+        "Party Ruiner",
+        "Sock Model",
+        "Street Fighter",
+        "Milk Connoisseur"
+    ];
+
     $(document).ready(function() {
         $('body').addClass('loaded');
+
+        var secondJob = secondJobs[Math.floor(Math.random() * secondJobs.length)];
+        $('.second_job').text(secondJob);
 
         var sectionManager = new SectionManager();
         sectionManager.setSections();
