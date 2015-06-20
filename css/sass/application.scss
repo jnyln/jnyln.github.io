@@ -18,5 +18,53 @@ body {
 }
 
 h1 {
-    @include font_family($brandon);
+    margin-bottom: 10px;
+    @include font_family($brandon_light);
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 8px;
+}
+
+h2 {
+    @include font_family($brandon_thin_italic);
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+section {
+    height: 100vh;
+    position: relative;
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        @include transform(translate3d(-50%, -50%, 0));
+        text-align: center;
+    }
+}
+
+
+/*============================
+    SECTIONS
+==============================*/
+
+.intro {
+    color: $blue;
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: $white;
+        background-image: url(../img/intro.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 15%;
+        opacity: 0.05;
+    }
 }

@@ -92,5 +92,59 @@ body {
 
 /* line 20, sass/application.scss */
 h1 {
-  font-family: "Brandon Text W01 Regular", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+  font-family: "Brandon Text W01 Light", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 80px;
+  letter-spacing: 8px;
+}
+
+/* line 28, sass/application.scss */
+h2 {
+  font-family: "Brandon Text W01 Thin Italic", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+/* line 35, sass/application.scss */
+section {
+  height: 100vh;
+  position: relative;
+}
+/* line 38, sass/application.scss */
+section .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+}
+
+/*============================
+    SECTIONS
+==============================*/
+/* line 53, sass/application.scss */
+.intro {
+  color: #69ACD5;
+}
+/* line 55, sass/application.scss */
+.intro:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #FFFFFF;
+  background-image: url(../img/intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  opacity: 0.05;
 }
