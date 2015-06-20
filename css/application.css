@@ -177,7 +177,7 @@ section .inner .content {
 }
 /* line 78, sass/application.scss */
 section .inner .content .image_header {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 /* line 81, sass/application.scss */
 section .inner .content .social_icons {
@@ -235,27 +235,28 @@ section.current .inner {
 /* line 135, sass/application.scss */
 #work .inner h2 img {
   height: 56px;
+  margin-top: -10px;
   vertical-align: middle;
 }
 
-/* line 143, sass/application.scss */
+/* line 144, sass/application.scss */
 #project {
   background-color: #FFFFFF;
   color: #222222;
 }
-/* line 147, sass/application.scss */
+/* line 148, sass/application.scss */
 #project .inner:after {
   background-image: url(../img/bg_project.jpg);
   background-position: center top;
   opacity: 0.1;
 }
 
-/* line 155, sass/application.scss */
+/* line 156, sass/application.scss */
 #contact {
   background-color: #222222;
   color: #FFFFFF;
 }
-/* line 159, sass/application.scss */
+/* line 160, sass/application.scss */
 #contact .inner:after {
   background-image: url(../img/bg_contact.jpg);
   background-position: center top;
