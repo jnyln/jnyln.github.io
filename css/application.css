@@ -108,15 +108,50 @@ h2 {
 }
 
 /* line 35, sass/application.scss */
-section {
-  height: 100vh;
-  position: relative;
+a {
+  display: inline-block;
+  color: #333333;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -moz-transition: -moz-transform, 0.2s, ease;
+  -o-transition: -o-transform, 0.2s, ease;
+  -webkit-transition: -webkit-transform, 0.2s, ease;
+  transition: transform, 0.2s, ease;
 }
-/* line 38, sass/application.scss */
+/* line 40, sass/application.scss */
+a:hover, a:focus {
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+/* line 46, sass/application.scss */
+section {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+}
+/* line 50, sass/application.scss */
+section:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 61, sass/application.scss */
 section .content {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 1;
   width: 100%;
   -moz-transform: translate3d(-50%, -50%, 0);
   -ms-transform: translate3d(-50%, -50%, 0);
@@ -124,27 +159,55 @@ section .content {
   transform: translate3d(-50%, -50%, 0);
   text-align: center;
 }
+/* line 69, sass/application.scss */
+section .content .image_header {
+  margin-bottom: 15px;
+}
 
 /*============================
     SECTIONS
 ==============================*/
-/* line 53, sass/application.scss */
+/* line 80, sass/application.scss */
 .intro {
-  color: #69ACD5;
-}
-/* line 55, sass/application.scss */
-.intro:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
   background-color: #FFFFFF;
-  background-image: url(../img/intro.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  color: #333333;
+}
+/* line 83, sass/application.scss */
+.intro:after {
+  background-image: url(../img/bg_intro.jpg);
   background-position: center 15%;
-  opacity: 0.05;
+  opacity: 0.08;
+}
+
+/* line 90, sass/application.scss */
+.work {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+/* line 93, sass/application.scss */
+.work:after {
+  background-image: url(../img/bg_work.jpg);
+  background-position: center top;
+  opacity: 0.12;
+}
+/* line 98, sass/application.scss */
+.work .image_header {
+  height: 80px;
+}
+/* line 102, sass/application.scss */
+.work h2 img {
+  height: 56px;
+  vertical-align: middle;
+}
+
+/* line 109, sass/application.scss */
+.project {
+  background-color: #FFFFFF;
+  color: #333333;
+}
+/* line 112, sass/application.scss */
+.project:after {
+  background-image: url(../img/bg_project.jpg);
+  background-position: center top;
+  opacity: 0.08;
 }
