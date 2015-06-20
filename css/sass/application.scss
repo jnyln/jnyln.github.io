@@ -17,6 +17,14 @@ body {
     height: 100%;
 }
 
+body {
+    opacity: 0;
+    @include transition(opacity, 0.5s, ease);
+    &.loaded {
+        opacity: 1;
+    }
+}
+
 h1 {
     margin-bottom: 10px;
     @include font_family($brandon_light);
@@ -139,7 +147,7 @@ section {
         &:after {
             background-image: url(../img/bg_project.jpg);
             background-position: center top;
-            opacity: 0.08;
+            opacity: 0.1;
         }
     }
 }

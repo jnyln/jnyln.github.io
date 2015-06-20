@@ -1,5 +1,7 @@
 (function() {
     $(document).ready(function() {
+        $('body').addClass('loaded');
+
         var sectionManager = new SectionManager();
         sectionManager.setSections();
         $(window).scroll(function() {
