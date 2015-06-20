@@ -1,0 +1,33 @@
+/*============================
+    COLORS
+==============================*/
+
+$white:                     #FFFFFF;
+$black:                     #000000;
+
+
+/*============================
+    FONTS
+==============================*/
+
+$brandon_thin:              'Brandon Text W01 Thin';
+$brandon_thin_italic:       'Brandon Text W01 Thin Italic';
+$brandon_light:             'Brandon Text W01 Light';
+$brandon_light_italic:      'Brandon Text W01 Light Italic';
+$brandon:                   'Brandon Text W01 Regular';
+$brandon_italic:            'Brandon Text W01 Regular It';
+$brandon_medium:            'Brandon Text W01 Medium';
+$brandon_medium_italic:     'Brandon Text W01 Medium Italic';
+$brandon_bold:              'Brandon Text W01 Bold';
+$brandon_bold_italic:       'Brandon Text W01 Bold Italic';
+$brandon_black:             'Brandon Text W01 Black';
+$brandon_black_italic:      'Brandon Text W01 Black Italic';
+
+
+/*============================
+    MIXINS
+==============================*/
+
+@mixin font_family($font) {
+    font-family: $font, Helvetica, Arial, sans-serif;
+}

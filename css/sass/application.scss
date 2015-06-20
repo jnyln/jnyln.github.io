@@ -1,0 +1,22 @@
+@import "compass";
+@import "compass/reset";
+@import "_variables.scss";
+
+/*============================
+    BASE
+==============================*/
+
+* {
+	@include box-sizing(border-box);
+	outline: none;
+	text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1 {
+    @include font_family($brandon);
+}
