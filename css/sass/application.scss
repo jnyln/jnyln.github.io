@@ -47,7 +47,7 @@ a {
     @include transition(transform, 0.2s, ease);
     &:hover,
     &:focus {
-        @include transform(scale(1.04));
+        @include transform(scale(1.04) translate3d(0, 0, 0));
     }
 }
 
