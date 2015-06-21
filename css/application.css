@@ -141,16 +141,19 @@ a:hover, a:focus {
   transform: scale(1.04) translate3d(0, 0, 0);
 }
 
-/* line 54, sass/application.scss */
+/*============================
+    DESKTOP
+==============================*/
+/* line 59, sass/application.scss */
 section {
   position: relative;
   height: 100%;
 }
-/* line 57, sass/application.scss */
+/* line 62, sass/application.scss */
 section .inner {
   height: 100%;
 }
-/* line 59, sass/application.scss */
+/* line 64, sass/application.scss */
 section .inner:after {
   position: absolute;
   content: '';
@@ -162,7 +165,7 @@ section .inner:after {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 70, sass/application.scss */
+/* line 75, sass/application.scss */
 section .inner .content {
   position: absolute;
   top: 50%;
@@ -175,25 +178,25 @@ section .inner .content {
   transform: translate3d(-50%, -50%, 0);
   text-align: center;
 }
-/* line 78, sass/application.scss */
+/* line 83, sass/application.scss */
 section .inner .content .image_header {
   margin-bottom: 20px;
 }
-/* line 81, sass/application.scss */
+/* line 86, sass/application.scss */
 section .inner .content .social_icons {
   padding-top: 10px;
 }
-/* line 83, sass/application.scss */
+/* line 88, sass/application.scss */
 section .inner .content .social_icons a {
   margin: 0 20px;
   padding: 15px;
   border: 4px #FFFFFF solid;
 }
-/* line 87, sass/application.scss */
+/* line 92, sass/application.scss */
 section .inner .content .social_icons a img {
   width: 36px;
 }
-/* line 95, sass/application.scss */
+/* line 100, sass/application.scss */
 section.current .inner {
   position: fixed;
   top: 0;
@@ -205,60 +208,103 @@ section.current .inner {
 /*============================
     SECTIONS
 ==============================*/
-/* line 110, sass/application.scss */
+/* line 115, sass/application.scss */
 #intro {
   background-color: #FFFFFF;
   color: #222222;
 }
-/* line 114, sass/application.scss */
+/* line 119, sass/application.scss */
 #intro .inner:after {
   background-image: url(../img/bg_intro.jpg);
   background-position: center 15%;
   opacity: 0.08;
 }
 
-/* line 122, sass/application.scss */
+/* line 127, sass/application.scss */
 #work {
   background-color: #222222;
   color: #FFFFFF;
 }
-/* line 126, sass/application.scss */
+/* line 131, sass/application.scss */
 #work .inner:after {
   background-image: url(../img/bg_work.jpg);
   background-position: center 20%;
   opacity: 0.1;
 }
-/* line 131, sass/application.scss */
+/* line 136, sass/application.scss */
 #work .inner .image_header {
   height: 80px;
 }
-/* line 135, sass/application.scss */
+/* line 140, sass/application.scss */
 #work .inner h2 img {
   height: 56px;
   margin-top: -10px;
   vertical-align: middle;
 }
 
-/* line 144, sass/application.scss */
+/* line 149, sass/application.scss */
 #project {
   background-color: #FFFFFF;
   color: #222222;
 }
-/* line 148, sass/application.scss */
+/* line 153, sass/application.scss */
 #project .inner:after {
   background-image: url(../img/bg_project.jpg);
   background-position: center top;
   opacity: 0.1;
 }
 
-/* line 156, sass/application.scss */
+/* line 161, sass/application.scss */
 #contact {
   background-color: #222222;
   color: #FFFFFF;
 }
-/* line 160, sass/application.scss */
+/* line 165, sass/application.scss */
 #contact .inner:after {
   background-image: url(../img/bg_contact.jpg);
   background-position: center top;
   opacity: 0.15;
+}
+
+/*============================
+    MOBILE
+==============================*/
+@media only screen and (max-width: 480px) {
+  /* line 179, sass/application.scss */
+  h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+
+  /* line 185, sass/application.scss */
+  h2 {
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 1px;
+  }
+
+  /* line 193, sass/application.scss */
+  section .inner .content {
+    padding: 0 20px;
+  }
+  /* line 196, sass/application.scss */
+  section .inner .content .social_icons a {
+    margin: 0 10px;
+    padding: 10px;
+    border: 3px #FFFFFF solid;
+  }
+  /* line 200, sass/application.scss */
+  section .inner .content .social_icons a img {
+    width: 24px;
+  }
+
+  /* line 211, sass/application.scss */
+  #work .inner .image_header {
+    height: 60px;
+  }
+  /* line 215, sass/application.scss */
+  #work .inner h2 img {
+    height: 40px;
+    margin-top: -5px;
+  }
 }

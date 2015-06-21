@@ -51,6 +51,11 @@ a {
     }
 }
 
+
+/*============================
+    DESKTOP
+==============================*/
+
 section {
     position: relative;
     height: 100%;
@@ -161,6 +166,57 @@ section {
             background-image: url(../img/bg_contact.jpg);
             background-position: center top;
             opacity: 0.15;
+        }
+    }
+}
+
+
+/*============================
+    MOBILE
+==============================*/
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 60px;
+        letter-spacing: 3px;
+    }
+
+
+    h2 {
+        font-size: 28px;
+        line-height: 120%;
+        letter-spacing: 1px;
+    }
+
+    section {
+        .inner {
+            .content {
+                padding: 0 20px;
+                .social_icons {
+                    a {
+                        margin: 0 10px;
+                        padding: 10px;
+                        border: 3px $white solid;
+                        img {
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #work {
+        .inner {
+            .image_header {
+                height: 60px;
+            }
+            h2 {
+                img {
+                    height: 40px;
+                    margin-top: -5px;
+                }
+            }
         }
     }
 }
