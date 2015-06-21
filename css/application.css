@@ -181,17 +181,17 @@ section .inner .content .image_header {
 }
 /* line 81, sass/application.scss */
 section .inner .content .social_icons {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 /* line 83, sass/application.scss */
 section .inner .content .social_icons a {
   margin: 0 20px;
-  padding: 20px;
-  border: 5px #FFFFFF solid;
+  padding: 15px;
+  border: 4px #FFFFFF solid;
 }
 /* line 87, sass/application.scss */
 section .inner .content .social_icons a img {
-  width: 48px;
+  width: 36px;
 }
 /* line 95, sass/application.scss */
 section.current .inner {
