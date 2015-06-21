@@ -144,7 +144,7 @@ a:hover, a:focus {
 /* line 54, sass/application.scss */
 section {
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 /* line 57, sass/application.scss */
 section .inner {
