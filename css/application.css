@@ -149,11 +149,19 @@ section {
   position: relative;
   height: 100%;
 }
-/* line 62, sass/application.scss */
+/* line 63, sass/application.scss */
+section.current .inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+}
+/* line 71, sass/application.scss */
 section .inner {
   height: 100%;
 }
-/* line 64, sass/application.scss */
+/* line 73, sass/application.scss */
 section .inner:after {
   position: absolute;
   content: '';
@@ -165,7 +173,7 @@ section .inner:after {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 75, sass/application.scss */
+/* line 84, sass/application.scss */
 section .inner .content {
   position: absolute;
   top: 50%;
@@ -178,31 +186,23 @@ section .inner .content {
   transform: translate3d(-50%, -50%, 0);
   text-align: center;
 }
-/* line 83, sass/application.scss */
+/* line 92, sass/application.scss */
 section .inner .content .image_header {
   margin-bottom: 20px;
 }
-/* line 86, sass/application.scss */
+/* line 95, sass/application.scss */
 section .inner .content .social_icons {
   padding-top: 10px;
 }
-/* line 88, sass/application.scss */
+/* line 97, sass/application.scss */
 section .inner .content .social_icons a {
   margin: 0 20px;
   padding: 15px;
   border: 4px #FFFFFF solid;
 }
-/* line 92, sass/application.scss */
+/* line 101, sass/application.scss */
 section .inner .content .social_icons a img {
   width: 36px;
-}
-/* line 100, sass/application.scss */
-section.current .inner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
 }
 
 /*============================
@@ -284,25 +284,29 @@ section.current .inner {
   }
 
   /* line 193, sass/application.scss */
+  section.current .inner {
+    position: static;
+  }
+  /* line 198, sass/application.scss */
   section .inner .content {
     padding: 0 20px;
   }
-  /* line 196, sass/application.scss */
+  /* line 201, sass/application.scss */
   section .inner .content .social_icons a {
     margin: 0 10px;
     padding: 10px;
     border: 3px #FFFFFF solid;
   }
-  /* line 200, sass/application.scss */
+  /* line 205, sass/application.scss */
   section .inner .content .social_icons a img {
     width: 24px;
   }
 
-  /* line 211, sass/application.scss */
+  /* line 216, sass/application.scss */
   #work .inner .image_header {
     height: 60px;
   }
-  /* line 215, sass/application.scss */
+  /* line 220, sass/application.scss */
   #work .inner h2 img {
     height: 40px;
     margin-top: -5px;
