@@ -23,3 +23,20 @@ $brandon_light:             'Brandon Text W01 Light';
 @mixin font_family($font) {
     font-family: $font, Helvetica, Arial, sans-serif;
 }
+
+
+/*============================
+    KEYFRAMES
+==============================*/
+
+@include keyframes(bounce) {
+    0% {
+        @include transform(translate3d(-50%, 0, 0));
+    }
+    50% {
+        @include transform(translate3d(-50%, -5px, 0));
+    }
+    100% {
+        @include transform(translate3d(-50%, 0, 0));
+    }
+}

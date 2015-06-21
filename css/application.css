@@ -73,6 +73,57 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     MIXINS
 ==============================*/
 /*============================
+    KEYFRAMES
+==============================*/
+@-moz-keyframes bounce {
+  0% {
+    -moz-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+  50% {
+    -moz-transform: translate3d(-50%, -5px, 0);
+    transform: translate3d(-50%, -5px, 0);
+  }
+  100% {
+    -moz-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-50%, -5px, 0);
+    transform: translate3d(-50%, -5px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@keyframes bounce {
+  0% {
+    -moz-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+  50% {
+    -moz-transform: translate3d(-50%, -5px, 0);
+    -ms-transform: translate3d(-50%, -5px, 0);
+    -webkit-transform: translate3d(-50%, -5px, 0);
+    transform: translate3d(-50%, -5px, 0);
+  }
+  100% {
+    -moz-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+/*============================
     BASE
 ==============================*/
 /* line 9, sass/application.scss */
@@ -204,62 +255,81 @@ section .inner .content .social_icons a {
 section .inner .content .social_icons a img {
   width: 36px;
 }
+/* line 107, sass/application.scss */
+section .inner .scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  width: 32px;
+  -moz-animation: bounce 1.5s infinite;
+  -webkit-animation: bounce 1.5s infinite;
+  animation: bounce 1.5s infinite;
+}
+/* line 114, sass/application.scss */
+section .inner .scroll path {
+  fill: none;
+  stroke: #222222;
+}
 
 /*============================
     SECTIONS
 ==============================*/
-/* line 115, sass/application.scss */
+/* line 127, sass/application.scss */
 #intro {
   background-color: #FFFFFF;
   color: #222222;
 }
-/* line 119, sass/application.scss */
+/* line 131, sass/application.scss */
 #intro .inner:after {
   background-image: url(../img/bg_intro.jpg);
   background-position: center 15%;
   opacity: 0.08;
 }
 
-/* line 127, sass/application.scss */
+/* line 139, sass/application.scss */
 #work {
   background-color: #222222;
   color: #FFFFFF;
 }
-/* line 131, sass/application.scss */
+/* line 143, sass/application.scss */
 #work .inner:after {
   background-image: url(../img/bg_work.jpg);
   background-position: center 20%;
   opacity: 0.1;
 }
-/* line 136, sass/application.scss */
+/* line 148, sass/application.scss */
 #work .inner .image_header {
   height: 80px;
 }
-/* line 140, sass/application.scss */
+/* line 152, sass/application.scss */
 #work .inner h2 img {
   height: 56px;
   margin-top: -10px;
   vertical-align: middle;
 }
 
-/* line 149, sass/application.scss */
+/* line 161, sass/application.scss */
 #project {
   background-color: #FFFFFF;
   color: #222222;
 }
-/* line 153, sass/application.scss */
+/* line 165, sass/application.scss */
 #project .inner:after {
   background-image: url(../img/bg_project.jpg);
   background-position: center top;
   opacity: 0.1;
 }
 
-/* line 161, sass/application.scss */
+/* line 173, sass/application.scss */
 #contact {
   background-color: #222222;
   color: #FFFFFF;
 }
-/* line 165, sass/application.scss */
+/* line 177, sass/application.scss */
 #contact .inner:after {
   background-image: url(../img/bg_contact.jpg);
   background-position: center top;
@@ -270,43 +340,43 @@ section .inner .content .social_icons a img {
     MOBILE
 ==============================*/
 @media only screen and (max-width: 480px) {
-  /* line 179, sass/application.scss */
+  /* line 191, sass/application.scss */
   h1 {
     font-size: 60px;
     letter-spacing: 3px;
   }
 
-  /* line 185, sass/application.scss */
+  /* line 197, sass/application.scss */
   h2 {
     font-size: 28px;
     line-height: 120%;
     letter-spacing: 1px;
   }
 
-  /* line 193, sass/application.scss */
+  /* line 205, sass/application.scss */
   section.current .inner {
     position: static;
   }
-  /* line 198, sass/application.scss */
+  /* line 210, sass/application.scss */
   section .inner .content {
     padding: 0 20px;
   }
-  /* line 201, sass/application.scss */
+  /* line 213, sass/application.scss */
   section .inner .content .social_icons a {
     margin: 0 10px;
     padding: 10px;
     border: 3px #FFFFFF solid;
   }
-  /* line 205, sass/application.scss */
+  /* line 217, sass/application.scss */
   section .inner .content .social_icons a img {
     width: 24px;
   }
 
-  /* line 216, sass/application.scss */
+  /* line 228, sass/application.scss */
   #work .inner .image_header {
     height: 60px;
   }
-  /* line 220, sass/application.scss */
+  /* line 232, sass/application.scss */
   #work .inner h2 img {
     height: 40px;
     margin-top: -5px;

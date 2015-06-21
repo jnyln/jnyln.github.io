@@ -104,6 +104,18 @@ section {
                 }
             }
         }
+        .scroll {
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            @include transform(translate3d(-50%, 0, 0));
+            width: 32px;
+            @include animation(bounce 1.5s infinite);
+            path {
+                fill: none;
+                stroke: $gray_dark;
+            }
+        }
     }
 }
 
