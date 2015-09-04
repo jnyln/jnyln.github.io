@@ -34,10 +34,13 @@ h1 {
 }
 
 h2 {
+		max-width: 1000px;
+		margin: 0 auto;
     @include font_family($brandon_thin_italic);
     text-transform: uppercase;
     font-size: 36px;
     letter-spacing: 2px;
+    line-height: 120%;
 }
 
 a {
@@ -195,7 +198,6 @@ section {
 
     h2 {
         font-size: 28px;
-        line-height: 120%;
         letter-spacing: 1px;
     }
 

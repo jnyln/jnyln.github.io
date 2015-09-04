@@ -1,4 +1,4 @@
-/* line 5, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -165,13 +165,16 @@ h1 {
 
 /* line 36, sass/application.scss */
 h2 {
+  max-width: 1000px;
+  margin: 0 auto;
   font-family: "Brandon Text W01 Thin Italic", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 36px;
   letter-spacing: 2px;
+  line-height: 120%;
 }
 
-/* line 43, sass/application.scss */
+/* line 46, sass/application.scss */
 a {
   display: inline-block;
   color: #222222;
@@ -184,7 +187,7 @@ a {
   -webkit-transition: -webkit-transform, 0.2s, ease;
   transition: transform, 0.2s, ease;
 }
-/* line 48, sass/application.scss */
+/* line 51, sass/application.scss */
 a:hover, a:focus {
   -moz-transform: scale(1.04) translate3d(0, 0, 0);
   -ms-transform: scale(1.04) translate3d(0, 0, 0);
@@ -195,12 +198,12 @@ a:hover, a:focus {
 /*============================
     DESKTOP
 ==============================*/
-/* line 59, sass/application.scss */
+/* line 62, sass/application.scss */
 section {
   position: relative;
   height: 100%;
 }
-/* line 63, sass/application.scss */
+/* line 66, sass/application.scss */
 section.current .inner {
   position: fixed;
   top: 0;
@@ -208,11 +211,11 @@ section.current .inner {
   z-index: 0;
   width: 100%;
 }
-/* line 71, sass/application.scss */
+/* line 74, sass/application.scss */
 section .inner {
   height: 100%;
 }
-/* line 73, sass/application.scss */
+/* line 76, sass/application.scss */
 section .inner .background {
   position: absolute;
   top: 0;
@@ -223,7 +226,7 @@ section .inner .background {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 83, sass/application.scss */
+/* line 86, sass/application.scss */
 section .inner .content {
   position: absolute;
   top: 50%;
@@ -236,25 +239,25 @@ section .inner .content {
   transform: translate3d(-50%, -50%, 0);
   text-align: center;
 }
-/* line 91, sass/application.scss */
+/* line 94, sass/application.scss */
 section .inner .content .image_header {
   margin-bottom: 20px;
 }
-/* line 94, sass/application.scss */
+/* line 97, sass/application.scss */
 section .inner .content .social_icons {
   padding-top: 10px;
 }
-/* line 96, sass/application.scss */
+/* line 99, sass/application.scss */
 section .inner .content .social_icons a {
   margin: 0 20px;
   padding: 15px;
   border: 4px #FFFFFF solid;
 }
-/* line 100, sass/application.scss */
+/* line 103, sass/application.scss */
 section .inner .content .social_icons a img {
   width: 36px;
 }
-/* line 106, sass/application.scss */
+/* line 109, sass/application.scss */
 section .inner .scroll {
   position: absolute;
   left: 50%;
@@ -268,7 +271,7 @@ section .inner .scroll {
   -webkit-animation: bounce 1.5s infinite;
   animation: bounce 1.5s infinite;
 }
-/* line 113, sass/application.scss */
+/* line 116, sass/application.scss */
 section .inner .scroll path {
   fill: none;
   stroke: #222222;
@@ -277,58 +280,58 @@ section .inner .scroll path {
 /*============================
     SECTIONS
 ==============================*/
-/* line 126, sass/application.scss */
+/* line 129, sass/application.scss */
 #intro {
   background-color: #FFFFFF;
   color: #222222;
 }
-/* line 130, sass/application.scss */
+/* line 133, sass/application.scss */
 #intro .inner .background {
   background-image: url(../img/bg_intro.jpg);
   background-position: center 15%;
   opacity: 0.08;
 }
 
-/* line 138, sass/application.scss */
+/* line 141, sass/application.scss */
 #work {
   background-color: #222222;
   color: #FFFFFF;
 }
-/* line 142, sass/application.scss */
+/* line 145, sass/application.scss */
 #work .inner .background {
   background-image: url(../img/bg_work.jpg);
   background-position: center 20%;
   opacity: 0.1;
 }
-/* line 147, sass/application.scss */
+/* line 150, sass/application.scss */
 #work .inner .image_header {
   height: 80px;
 }
-/* line 151, sass/application.scss */
+/* line 154, sass/application.scss */
 #work .inner h2 img {
   height: 56px;
   margin-top: -10px;
   vertical-align: middle;
 }
 
-/* line 160, sass/application.scss */
+/* line 163, sass/application.scss */
 #project {
   background-color: #FFFFFF;
   color: #222222;
 }
-/* line 164, sass/application.scss */
+/* line 167, sass/application.scss */
 #project .inner .background {
   background-image: url(../img/bg_project.jpg);
   background-position: center top;
   opacity: 0.1;
 }
 
-/* line 172, sass/application.scss */
+/* line 175, sass/application.scss */
 #contact {
   background-color: #222222;
   color: #FFFFFF;
 }
-/* line 176, sass/application.scss */
+/* line 179, sass/application.scss */
 #contact .inner .background {
   background-image: url(../img/bg_contact.jpg);
   background-position: center top;
@@ -339,43 +342,42 @@ section .inner .scroll path {
     MOBILE
 ==============================*/
 @media only screen and (max-width: 480px) {
-  /* line 190, sass/application.scss */
+  /* line 193, sass/application.scss */
   h1 {
     font-size: 60px;
     letter-spacing: 3px;
   }
 
-  /* line 196, sass/application.scss */
+  /* line 199, sass/application.scss */
   h2 {
     font-size: 28px;
-    line-height: 120%;
     letter-spacing: 1px;
   }
 
-  /* line 204, sass/application.scss */
+  /* line 206, sass/application.scss */
   section.current .inner {
     position: static;
   }
-  /* line 209, sass/application.scss */
+  /* line 211, sass/application.scss */
   section .inner .content {
     padding: 0 20px;
   }
-  /* line 212, sass/application.scss */
+  /* line 214, sass/application.scss */
   section .inner .content .social_icons a {
     margin: 0 10px;
     padding: 10px;
     border: 3px #FFFFFF solid;
   }
-  /* line 216, sass/application.scss */
+  /* line 218, sass/application.scss */
   section .inner .content .social_icons a img {
     width: 24px;
   }
 
-  /* line 227, sass/application.scss */
+  /* line 229, sass/application.scss */
   #work .inner .image_header {
     height: 60px;
   }
-  /* line 231, sass/application.scss */
+  /* line 233, sass/application.scss */
   #work .inner h2 img {
     height: 40px;
     margin-top: -5px;
