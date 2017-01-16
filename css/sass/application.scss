@@ -26,17 +26,20 @@ body {
 }
 
 h1 {
-    margin-bottom: 10px;
-    @include font_family($brandon_light);
+    margin-bottom: 15px;
+    @include font_family($main_font);
+	font-weight: 200;
     text-transform: uppercase;
     font-size: 80px;
     letter-spacing: 8px;
 }
 
 h2 {
-		max-width: 1000px;
-		margin: 0 auto;
-    @include font_family($brandon_thin_italic);
+	max-width: 1000px;
+	margin: 0 auto;
+    @include font_family($main_font);
+	font-weight: 100;
+	font-style: italic;
     text-transform: uppercase;
     font-size: 36px;
     letter-spacing: 2px;
