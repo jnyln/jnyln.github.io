@@ -1,5 +1,5 @@
 # Google Exercise - Photo Gallery
-**URL**: https://johnnyl.in/gallery/?pw=google
+**URL**: http://johnnyl.in/gallery/?pw=google
 
 ## Notes
 * I decided to go with React and Redux, to keep the project maintainable and extensible. Future features can be easily added through explicit actions and new components.
