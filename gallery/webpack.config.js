@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var CompressionPlugin = require('compression-webpack-plugin');
 
 var BUILD_DIR = path.resolve(__dirname, 'build/scripts');
 var APP_DIR = path.resolve(__dirname, 'app/scripts');
@@ -21,7 +22,15 @@ var config = {
                 loader: 'babel-loader'
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin(),
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+            }
+        }),
+    ],
 };
 
 module.exports = config;
