@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="text/javascript" src="bodymovin.min.js"></script>
+    </head>
+    <body>
+        <div class="bodymovin_cal"></div>
+        <img class="gif_cal" src="cal_flip_shortened_v3.gif" />
+    </body>
+</html>
+
+<script>
+    bodymovin.loadAnimation({
+        container: document.querySelector('.bodymovin_cal'), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'data.json' // the path to the animation json
+    });
+</script>
