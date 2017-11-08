@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script type="text/javascript" src="bodymovin.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <div class="bodymovin_animation"></div>
+        </div>
+    </body>
+</html>
+
+<script>
+    bodymovin.loadAnimation({
+        container: document.querySelector('.bodymovin_animation'), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'data.json' // the path to the animation json
+    });
+</script>
