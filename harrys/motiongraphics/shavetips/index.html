@@ -18,7 +18,7 @@
         path: 'data.json' // the path to the animation json
     });
 
-    anim.onLoopComplete(() => {
+    anim.onLoopComplete = () => {
         anim.goToAndPlay(50, true);
-    });
+    };
 </script>
