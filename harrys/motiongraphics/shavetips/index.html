@@ -10,11 +10,15 @@
 </html>
 
 <script>
-    bodymovin.loadAnimation({
+    const anim = bodymovin.loadAnimation({
         container: document.querySelector('.bodymovin_animation'), // the dom element that will contain the animation
         renderer: 'svg',
         loop: true,
         autoplay: true,
         path: 'data.json' // the path to the animation json
+    });
+
+    anim.onLoopComplete(() => {
+        anim.goToAndPlay(50, true);
     });
 </script>
