@@ -51,6 +51,10 @@ a {
     color: $gray_dark;
     @include transform(scale(1));
     @include transition(transform, 0.2s, ease);
+    &:hover,
+    &:focus {
+        @include transform(scale(1.04) translate3d(0, 0, 0));
+    }
 }
 
 
@@ -61,6 +65,7 @@ a {
 section {
     position: relative;
     height: 100%;
+    overflow: hidden;
     &.current {
         .inner {
             position: fixed;
@@ -126,13 +131,13 @@ section {
 ==============================*/
 
 #intro {
-    background-color: $white;
-    color: $gray_dark;
+    background-color: $gray_dark;
+    color: $white;
     .inner {
         .background {
             background-image: url(../img/bg_intro.jpg);
             background-position: center 20%;
-            opacity: 0.20;
+            opacity: 0.15;
         }
     }
 }
@@ -177,14 +182,14 @@ section {
     }
 }
 
-#project {
-    background-color: $white;
-    color: $gray_dark;
+#awards {
+    background-color: $gray_dark;
+    color: $white;
     .inner {
         .background {
-            background-image: url(../img/bg_project.jpg);
-            background-position: center top;
-            opacity: 0.1;
+            background-image: url(../img/bg_awards.jpg);
+            background-position: center center;
+            opacity: 0.15;
         }
     }
 }
@@ -195,8 +200,8 @@ section {
     .inner {
         .background {
             background-image: url(../img/bg_contact.jpg);
-            background-position: center top;
-            opacity: 0.15;
+            background-position: center center;
+            opacity: 0.25;
         }
     }
 }
