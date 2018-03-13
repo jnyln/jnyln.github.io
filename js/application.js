@@ -1,18 +1,18 @@
-(function() {
+(function () {
     var CONSTANTS = {
         CURRENT_SCALE_MIN: 1,
         CURRENT_SCALE_MAX: 1.1
     };
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('body').addClass('loaded');
 
         var sectionManager = new SectionManager();
         sectionManager.setSections();
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             sectionManager.setSections();
         });
-        $(window).resize(function() {
+        $(window).resize(function () {
             sectionManager.setSections();
         })
     });
@@ -20,10 +20,11 @@
     function SectionManager() {
         var self = this;
         this.currentSection = null;
+        var $sections = $('section');
 
-        this.setSections = function() {
+        this.setSections = function () {
             var scrollPosition = $(window).scrollTop();
-            $('section').each(function() {
+            $sections.each(function () {
                 var sectionTop = $(this).offset().top;
                 var sectionBottom = $(this).offset().top + $(this).height();
                 if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
@@ -32,7 +33,7 @@
                     if (self.currentSection !== $(this).attr('id')) {
                         $('.current').removeClass('current');
                         self.currentSection = $(this).attr('id');
-                        $('#'+self.currentSection).addClass('current');
+                        $('#' + self.currentSection).addClass('current');
                     }
                     return false;
                 }
