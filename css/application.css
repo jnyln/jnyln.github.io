@@ -181,7 +181,8 @@ h2 {
 /* line 50, sass/application.scss */
 a {
   display: inline-block;
-  color: #222222;
+  color: #FFFFFF;
+  font-weight: 200;
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
