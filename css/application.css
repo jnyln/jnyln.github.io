@@ -185,6 +185,9 @@ a {
   font-weight: 300;
 }
 
+a:hover {
+  cursor: pointer;
+}
 
 /*============================
     DESKTOP
