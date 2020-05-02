@@ -344,7 +344,7 @@ section .inner .scroll path {
 }
 /* line 190, sass/application.scss */
 #awards .inner .background {
-  background-image: url(../img/bg_awards.jpg);
+  background-image: url(../img/bg_volunteering.jpg);
   background-position: center center;
   opacity: 0.15;
 }
