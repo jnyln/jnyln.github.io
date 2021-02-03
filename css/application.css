@@ -303,6 +303,16 @@ section .inner .scroll path {
   vertical-align: middle;
 }
 
+#alma {
+  background-color: #000000;
+}
+
+#alma .inner .background {
+  background-image: url(../img/bg_alma.jpg);
+  background-position: center 20%;
+  opacity: 0.2;
+}
+
 /* line 163, sass/application.scss */
 #harrys {
   background-color: #000000;
