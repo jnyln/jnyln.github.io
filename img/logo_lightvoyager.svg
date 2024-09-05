@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509.1 148.29">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .24em;
+      }
+
+      .cls-2 {
+        letter-spacing: .2em;
+      }
+
+      .cls-3 {
+        letter-spacing: .2em;
+      }
+
+      .cls-4 {
+        letter-spacing: .2em;
+      }
+
+      .cls-5 {
+        letter-spacing: .17em;
+      }
+
+      .cls-6 {
+        letter-spacing: .15em;
+      }
+
+      .cls-7 {
+        fill: #fff;
+        font-family: AlphaCentauri, AlphaCentauri;
+        font-size: 81.56px;
+      }
+
+      .cls-8 {
+        letter-spacing: .09em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <text class="cls-7" transform="translate(102.28 71.53)"><tspan class="cls-2" x="0" y="0">LIG</tspan><tspan class="cls-1" x="182.29" y="0">H</tspan><tspan class="cls-4" x="260.18" y="0">T</tspan><tspan class="cls-5" x="-102.28" y="71.86">V</tspan><tspan class="cls-2" x="-27.73" y="71.86">O</tspan><tspan class="cls-8" x="62.88" y="71.86">Y</tspan><tspan class="cls-6" x="125.44" y="71.86">A</tspan><tspan class="cls-3" x="203.74" y="71.86">GER</tspan></text>
+  </g>
+</svg>
