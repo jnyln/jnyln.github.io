@@ -309,8 +309,8 @@ section .inner .scroll path {
 }
 /* line 166, sass/application.scss */
 #lightvoyager .inner .image_header {
-  height: 100px;
-  margin-bottom: 0;
+  height: 140px;
+  margin-bottom: 20px;
 }
 /* line 170, sass/application.scss */
 #lightvoyager .inner .background {
